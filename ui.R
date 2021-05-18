@@ -16,7 +16,7 @@ shinyUI(fluidPage(
         "misshapen animal skeleton"), "based on the items you already have.",
       "(Alternatively, you can just play with the widgets and watch the text",
       "and plots update. I do. It's fun!)"),
-    img(src="http://images.kingdomofloathing.com/itemimages/animskel.gif",
+    img(src="https://cdn.coldfront.net/thekolwiki/images/5/54/Animskel.gif",
         alt="A misshapen animal skeleton from Kingdom of Loathing"),
     br(),br(),
     p("To get started (and finished), use the lefthand panel to specify how",
@@ -36,7 +36,7 @@ shinyUI(fluidPage(
             p("Enter the number of",
               a(href="http://kol.coldfront.net/thekolwiki/index.php/Pile_of_dusty_animal_bones",
                 "piles of dusty animal bones"),
-              " in your inventory."), img(src="http://images.kingdomofloathing.com/itemimages/bonepile.gif"),
+              " in your inventory."), img(src="https://cdn.coldfront.net/thekolwiki/images/f/ff/Bonepile.gif"),
             numericInput(
                 "piles", NULL,
                 50, min=1, step=1), br(),
@@ -44,7 +44,7 @@ shinyUI(fluidPage(
               a(href="http://kol.coldfront.net/thekolwiki/index.php/Dusty_animal_bones",
                 "dusty animal bones"),
               "do you already have?"),
-            img(src="http://images.kingdomofloathing.com/itemimages/aniskull.gif"),
+            img(src="https://cdn.coldfront.net/thekolwiki/images/1/13/Aniskull2.gif"),
             sliderInput(
                 "bones", NULL,
                 min=0, max=99, value=0, step=1),
@@ -65,5 +65,5 @@ shinyUI(fluidPage(
     ),
     p("Copyright", HTML("&copy;"), "2015 Jason Schadewald"),
     p("This software is shared under the MIT License. The source code is here:",
-    a("https://github.com/jschadewald/KoLStats"))
+    a(href="https://github.com/jschadewald/KoLStats", "https://github.com/jschadewald/KoLStats"))
 ))
